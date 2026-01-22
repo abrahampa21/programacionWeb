@@ -1,0 +1,45 @@
+/*
+Elementos span y div
+
+<div></div>: 
+Es un elemento de bloque
+ocupa todo el ancho disponible 
+genera saltos de línea antes y después de él.
+Se utiliza para agrupar otros elementos HTML y aplicarles estilos
+Ideal para estructurar layouts complejos:
+
+*/
+
+.section{
+    background-color: blue;
+    padding: 20px;
+    border: 5px solid orange;
+}
+
+/*
+Elemento span::after
+-Es un elemento de línea
+-No genera saltos de línea antes ni después de él
+-Se utiliza para aplicar estilos a partes específicas de un texto o contenido dentro de otros elementos
+*/
+
+.red-markup{
+    color: red;
+    font-weight: bold;
+}
+
+.centrado{
+    background: grey;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.container span{
+    color: blue;
+    font-style: italic;
+}
+
+
+/*Infografía, box model (top,bottom,left,right) y ejercicios ejecutables de todo
+otra actividad: pseudoclases y pseudoelementos
+*/

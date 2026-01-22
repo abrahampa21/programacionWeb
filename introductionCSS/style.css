@@ -1,0 +1,12 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div{
+  border: 2px solid blue;
+  width: 50%;
+  margin-left: 50px;
+  padding: 50px 30px 40px;
+}

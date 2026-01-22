@@ -1,0 +1,17 @@
+.padre{
+    position: relative;
+    background-color: blue;
+    color: #fff;
+    border: 1px solid gold;
+    height: 300px;
+}
+
+.caja{
+    width: 300px;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 30px;
+    left: 10px;
+}

@@ -1,0 +1,35 @@
+/*
+Identificación y agrupación de elementos CSS (ID y Class):
+
+Se utilizan atributos id y class que permiten identificar y agrupar elementos HTML para aplicar estilos
+CSS específicos. 
+
+1.- Atributo ID: Identifica un único elemento en el documento HTML, debe ser único dentro de la página:
+en CSS se selecciona con # seguido del nombre del id.
+
+Ejemplo:
+*/
+
+#header{
+    background-color: #1a2a3a;
+    color: #fff;
+}
+
+/*
+2.- Class: sirve para agrupar varios elementos que comparten el mismo estilo. Puede ser utilizado en varios elementos
+En CSS se selecciona con símbolo "." seguido del nombre de la clase (class).
+
+Ejemplo:
+*/
+
+.text{
+    font-weight: bold;
+    color: green;
+}
+
+/*
+Diferencias entre ID y class:
+-ID es único y se usa para un solo elemento.
+-class puede repetirse en varios elementos y se usa para agrupar elementos con estilos similares.
+*/
+

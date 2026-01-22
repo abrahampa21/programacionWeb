@@ -1,0 +1,102 @@
+/*
+Posicionamiento y ubicación de elementos:
+Es como tener un panel de control para decirle a cada elemento HTML: "Tu puedes estar aquí, allá, flotar, quedarte quito o seguir el camino normal"
+
+static: posición por defecto de los elementos HTML. Imagina que los elementos son autos en una autopista
+Los elementos siguen el flujo normal del documento.
+Las propiedades top, bottom, left y right no tienen efecto.
+
+*/
+
+/*Static*/
+.static {
+  position: static;
+  border: 1px solid red;
+  background-color: blue;
+  color: #fff;
+  padding: 20px;
+  margin: 10px;
+}
+
+/*
+Relative: Un coche que se mueve desde su posición original (no afecta a otros)
+El elemento se desplaza relativo a su propia posición original
+*/
+
+.container {
+  background-color: aquamarine;
+  padding: 20px;
+}
+
+.relative {
+  position: relative;
+  border: 2px solid purple;
+  background-color: lightcoral;
+  top: 10px;
+  left: 40px;
+}
+
+
+/*
+Absolute: 
+como un helicóptero que despega de una plataforma y se mueve libremente en el aire. Ya no ocupa su lugar original.
+
+El elemento se desplaza relativo al ancestro posicionado más cercano (como position distinto de static).
+Si no hay ancestros posicionados, se mueve al relativo al viewport (ventana del navegador).
+El elemento sale del flujo y no ocupa espacio
+
+*/
+
+.absolute-div{
+  position: relative;
+  background-color: crimson;
+  color: #fff;
+  width: 300px;
+  height: 200px;
+  margin: 20px;
+}
+
+.absolute-div .absolute{
+  position: absolute;
+  background-color: aquamarine;
+  top: 200px;
+  left: 100px;
+  padding: 10px;
+}
+
+
+/*
+Fixed:
+Es como una cámara de seguridad en la pared, siempre está en el mismo lugar sin importar lo que pase abajo
+
+Similar al absolute, pero se posiciona relativo al viewport
+El elemento no se mueve al hacer scroll
+Ideal para navbar o botones flotantes
+*/
+
+.fixed-box{
+  position: fixed;
+  background-color: blue;
+  color: #fff;
+  border: 2px solid gold;
+  top: 20px;
+  right: 20px;
+  padding: 10px;
+}
+
+/*
+Sticky:
+Como una persona que camina normalmente pero al llegar a un punto, se aferra a una barra y ya no se mueve de ahí.
+Es una combinación de relative y fixed.
+El elemento se actúa como relative hasta que cruza cierto umbral al hacer scroll, momento en el que se comporta como fixed
+
+*/
+
+.sticky-container{
+  position: sticky;
+  top: 0;
+  background-color: #1a2a3b;
+  color: #fff;
+  padding: 20px;
+  margin: 5px;
+}

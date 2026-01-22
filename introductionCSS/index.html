@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Estilos CSS externos
+    Se define en un archivo separado con la extensión .css
+    Se enlaza al documento mediante la etiqueta link
+    Permite reutilizar los estilos en múltiples páginas web
+    Facilita el mantenimiento y organización del código
+    Método más recomendado para aplicar estilos en proyectos
+
+    Prioridad de los estilos CSS:
+    Cuando se aplican estilos de diferentes formas, CSS sigue un orden de prioridad para determinar qué estilos se aplican (mayor a menor):
+    1- Estilos en línea
+    2- Inline styles
+    3- Estilos externos
+    4- Estilos por defecto del navegador
+    -->
+    <link rel="stylesheet" href="style.css">
+    <title>Ejemplos</title>
+    <style>
+        /*Estilos internos
+        Se define dentro de la etiqueta <style> en la sección <head>
+        Solo afectan al documento en el que están definidos.
+        Útil para estilos específicos de una sola página    
+        */
+    </style>
+</head>
+<body>
+    <!--Estilos en línea (inline-style)-->
+    <h1>Hola mundo</h1>
+    <h2>Programación Web</h2>
+
+    <div class="container"">
+        <h3>Title</h3>
+        <p class="lorem" id="lorem">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore quidem labore sint optio sequi asperiores temporibus aspernatur maiores. Aut illo quia itaque cum. Voluptatibus eveniet illum numquam totam quisquam! Amet.</p>
+    </div>
+
+    <!--
+    *Se aplica directamente dentro de la etiqueta HTML mediante el atributo style
+    *Tiene la mayor prioridad sobre los otros tipos de estilos.
+    *No es recomendable su uso, ya que dificulta el mantenimiento
+    -->
+    <p id="paragraph" class="paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere totam sapiente excepturi cumque laudantium voluptate quibusdam quis, modi similique eaque asperiores eum, incidunt exercitationem! Quae dolores quibusdam expedita beatae debitis!</p>
+
+</body>
+</html>
