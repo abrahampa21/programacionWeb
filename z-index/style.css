@@ -1,0 +1,104 @@
+/*
+Controla el orden de apilamiento de los elementos posicionados 
+(aquellos con position distinto de static).
+
+¿Cómo funciona?
+Se aplica solo a elementos con position: relative, absolute, fixed o sticky.
+Acepta valores numéricos (positivos y negativos o 0/auto).
+Un elemento con un z-index más alto aparecerá por encima de otro z-index más bajo.
+Si dos elementos tienen el mismo z-index, el que aparece después en el código HTML estará por encima.
+
+*/
+
+/*
+.capa1{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 120px;
+    height: 200px;
+    background-color: red;
+    z-index: 1;
+}
+
+.capa2{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    z-index:2;
+}
+
+.capa3{
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    width: 80px;
+    height: 80px;
+    background-color: green;
+    z-index:3;
+
+}
+
+.capa4{
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    width: 120px;
+    height: 200px;
+    background-color: yellow;
+    z-index:1;
+
+}
+
+*/
+
+.contenedor{
+    position: relative;
+    width:500px;
+    height: 300px;
+    background-color: lightgoldenrodyellow;
+    border: 1px solid red;
+}
+
+.capa1{
+    position: absolute;
+    background-color: lightblue;
+    width: 200px;
+    height: 100px;
+    top: 10px;
+    left:10px;
+    z-index: 1;
+}
+
+.capa2{
+    position: absolute;
+    background-color: lightcoral;
+    width: 250px;
+    height: 50px;
+    top: 10px;
+    left:20px;
+    z-index: 2;
+}
+
+.capa3{
+    position: absolute;
+    background-color: lightgreen;
+    width: 200px;
+    height: 100px;
+    top: 50px;
+    left: 40px;
+    z-index: 3;
+}
+
+.capa4{
+    position: relative;
+    background-color: tomato;
+    width: 100px;
+    height: 150px;
+    top: 80px;
+    left: 60px;
+    z-index: 4;
+}
