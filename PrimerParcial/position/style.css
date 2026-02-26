@@ -5,7 +5,6 @@ Es como tener un panel de control para decirle a cada elemento HTML: "Tu puedes 
 static: posición por defecto de los elementos HTML. Imagina que los elementos son autos en una autopista
 Los elementos siguen el flujo normal del documento.
 Las propiedades top, bottom, left y right no tienen efecto.
-
 */
 
 /*Static*/
