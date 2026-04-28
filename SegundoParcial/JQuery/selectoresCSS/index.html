@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de selectores CSS</title>
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+
+</head>
+<body>
+    
+    <!--
+    USO DE SELECTORES CSS PARA SIMPLIFICAR MANEJO DE FORMAS HTML
+    MANEJO AVANZADO DE EVENTOS
+    EXTENSIÓN DEL LENGUAJE CON NUEVOS MÉTODOS Y PROPIEDADES
+    SIMPLIFICACIÓN DEL MANEJO DE CSS
+
+    jQuery -> Librería de JS, simplifica código(manipulación del DOM)
+    $(selector).accion();
+    $(selector) -> Es el elemento o los elementos que queremos seleccionar
+    .accion() -> La acción que queremos realizar sobre los elementos seleccionados
+
+    #id -> $("#nombreId");
+    .classs -> $(".clase");
+    input [type='text'] -> $("input[type='text']");
+    :checked -> $(":checked");
+    :focus -> $(":focus");
+    form input -> $("form input");
+    -->
+
+    <!--Primer ejemplo-->
+    <input type="text" id="usuario" placeholder="Ingrese su nombre"/>
+    <button id="btn-mostrar">Mostrar</button>
+    <p id="salida"></p>
+
+    <script>
+        $("#btn-mostrar").click(function(){
+            let nombre = $("#usuario").val();
+            $("#salida").text("Hola " + nombre);
+        });
+
+        let btn = $("#btn-mostrar").width();
+        console.log(btn);
+    </script>
+
+    <!--Segundo ejemplo-->
+    <label><input type="checkbox" id="acepto" />
+        Acepto los términos y condiciones</label>
+        <button id="btn-aceptar">Aceptar</button>
+        <p id="salida2"></p>
+
+        <script>
+            $("#btn-aceptar").click(function (){
+                if($("#acepto").is(":checked")){
+                    $("#salida2").text("Términos aceptados").css("color","green");
+                }else{
+                    $("#salida2").text("Debe aceptar los términos y condiciones").css("color","red");
+                }
+            });
+        </script>
+
+        
+</body>
+</html>

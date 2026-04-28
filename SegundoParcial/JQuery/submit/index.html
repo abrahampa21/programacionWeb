@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="formulario">
+      <label for="nombre">Nombre:</label>
+      <input type="text" name="nombre" id="nombre" />
+      <div id="error-nombre" class="error"></div>
+
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" />
+      <div id="error-email" class="error"></div>
+
+      <label for="mensaje">Mensaje:</label>
+      <input type="text" name="mensaje" id="mensaje" />
+      <div id="error-password" class="error"></div>
+
+      <button type="submit">Registrarse</button>
+    </form>
+
+    <script>
+      $("#formulario").submit(function (event) {
+        let valido = true;
+
+        if ($("#nombre").val().trim() === "") {
+          $("#error-nombre").text("El nombre es obligatorio");
+          valido = false;
+        }
+
+        if ($("#email").val().trim() === "") {
+          $("#error-email").text("El email es obligatorio");
+          valido = false;
+        }
+
+        if ($("#password").val().length < 6) {
+          $("#error-mensaje").text("Mínimo 6 caracteres");
+          valido = false;
+        }
+
+        if (!valido) {
+          event.preventDefault();
+          alert("Por favor corrige los errores antes de enviar el formulario");
+        } else {
+          alert("Formulario enviado correctamente");
+        }
+      });
+    </script>
+  </body>
+</html>

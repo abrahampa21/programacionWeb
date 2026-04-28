@@ -50,7 +50,6 @@ console.log(ciudad);
 // let frutas = ["Manzana","Banana","Naranja"];
 // console.log(frutas[4]);
 
-
 // //Ejercicio
 // let precio = 200;
 // let ivaPrecio = precio * .21;
@@ -91,20 +90,69 @@ contador--; contador = contador - 1
 
 */
 
-let contador = 10;
-contador++;
-console.log(contador);
-contador--;
-console.log(contador);
-contador++;
-console.log(contador);
-//Posfijo
-contador++;
-console.log(contador);
-//Prefijo
-++contador;
-console.log(++contador);
+// let contador = 10;
+// contador++;
+// console.log(contador);
+// contador--;
+// console.log(contador);
+// contador++;
+// console.log(contador);
+// //Posfijo
+// contador++;
+// console.log(contador);
+// //Prefijo
+// ++contador;
+// console.log(++contador);
 
-let x = 10;
-let z = 2 + (++x);
-console.log(z);
+// let x = 10;
+// let z = 2 + (++x);
+// console.log(z);
+
+/*FUNCIONES*/
+
+function nombreFuncion(parametros) {
+  //Código a ejecutar;
+  return resultado;
+}
+
+//Declaración de funciones
+
+//Función con parámetros
+function saludar(nombre) {
+  console.log("Hola " + nombre + ", bienvenido a JavaScript");
+}
+
+saludar("Abraham");
+
+//Función con retorno
+function sumar(a, b) {
+  return a + b;
+}
+
+let resultado = sumar(10, 20);
+console.log(resultado);
+
+//Funciones como expresión
+const multiplicar = function (a, b) {
+  return a * b;
+};
+
+console.log(multiplicar(5,5));
+
+//Funciones flecha
+const sumar2 = (a,b) => {
+    return a + b;
+}
+
+//Ámbito en funciones (scope)
+console.log(sumar2(10,40));
+
+let mensaje = "Hola";
+
+function prueba(){
+    let mensaje = "Hola jóvenes no se duerman los de atrás y también los de adelante, profe repruébelos";
+
+}
+
+console.log(prueba());
+

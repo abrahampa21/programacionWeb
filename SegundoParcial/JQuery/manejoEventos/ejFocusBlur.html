@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+    <title>Focus Blur</title>
+    <style>
+      input {
+        padding: 10px;
+        margin: 10px 0;
+        display: block;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>EVENTOS COMUNES EN FORMULARIOS (focus y blur)</h1>
+    <h2>Formulario de contacto</h2>
+
+    <label for="nombre">Nombre:</label>
+    <input type="text" name="nombre" id="nombre" />
+
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" />
+
+    <label for="mensaje">Mensaje:</label>
+    <input type="text" name="mensaje" id="mensaje" />
+
+    <script>
+      $("input").focus(function () {
+        $(this).css("border-color","blue");
+        $(this).css("background-color", "red");
+      });
+      $("input").blur(function () {
+        $(this).css("border-color", "blue");
+        $(this).css("background-color", "green");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+    <title>Input Keyup</title>
+    <style>
+        #busqueda{
+            width: 300px;
+            padding: 10px;
+            font-size: 1rem;
+        }
+
+        #resultado{
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-left: 4px solid #4caf50;
+        }
+    </style>
+</head>
+<body>
+    <h1>BUSCADOR</h1>
+
+    <input type="text" id="busqueda" placeholder="Escribe para buscar...">
+
+    <div id="resultado">
+        <p>Esperando búsqueda</p>
+    </div>
+
+    <script>
+        $("#busqueda").on("input", function(){
+            let texto = $(this).val();
+            if(texto.length>0){
+                $("#resultado").html("<strong>Buscando:</strong> " + texto)
+            }else{
+                $("#resultado").html("<p>Esperando búsqueda</p>");
+            }
+        })
+    </script>
+</body>
+</html>
